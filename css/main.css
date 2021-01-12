@@ -26,12 +26,19 @@ body {
 }
 
 header {
-  margin: 0;
-  text-align: center;
+  margin: 0 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "nav1 logo nav2"
+    ".    logo    .";
 }
 
 h1 {
   margin: 0;
+  grid-area: logo;
+  order: 1;
 }
 
 img {
@@ -41,6 +48,8 @@ img {
 
 nav {
   background-color: #bd027d;
+  grid-column: 1 / -1;
+  grid-row: 1;
 }
 
 nav ul {
