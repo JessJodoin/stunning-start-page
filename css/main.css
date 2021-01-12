@@ -105,6 +105,39 @@ h2 {
 section ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+section li {
+  background-color: #ccc;
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "info"
+    "img"
+    "name";
+}
+
+li h3 {
+  grid-area: name;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.25rem;
+  margin: 0 0 .5rem;
+  padding: .5em 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+li div {
+  grid-area: info;
+  display: flex;
 }
 
 footer {
