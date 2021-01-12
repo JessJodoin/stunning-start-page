@@ -125,6 +125,11 @@ section li {
     "name";
 }
 
+li img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
 li h3 {
   grid-area: name;
   font-family: "PT Sans Narrow", sans-serif;
@@ -132,13 +137,20 @@ li h3 {
   margin: 0 0 .5rem;
   padding: .5em 0;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, .1);
+  order: 1;
 }
 
 li div {
   grid-area: info;
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
+  justify-self: end;
+  margin: .5rem 0 0;
+  padding: 0 .5em;
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 1em 0 0 1em;
 }
 
 li div img {
