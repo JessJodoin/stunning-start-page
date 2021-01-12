@@ -13,8 +13,77 @@ html {
 
   font-family: Georgia, serif;
   line-height: 1.5;
+  background-color: #bebebe;
+  color: #323232;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+nav {
+  background-color: #bd027d;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0 1rem;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+nav a {
+  padding: .5em .8em;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #960062;
+  border-radius: 6px;
+  color: #eccee2;
+  background-color: #bd027d;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #960062;
+  color: #fff;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+main > p {
+  margin: 0 0 1.5rem;
+  font-size: 1.125rem;
+}
+
+section {
+  padding: 1.5rem 0;
+  border-bottom: 2px solid #afafaf;
+  border-top: 2px solid #afafaf;
 }
