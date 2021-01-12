@@ -138,6 +138,18 @@ li h3 {
 li div {
   grid-area: info;
   display: flex;
+  align-items: center;
+}
+
+li div img {
+  width: 1em;
+  height: 1em;
+  margin: 0 .5rem 0 0;
+}
+
+li div strong {
+  font-weight: normal;
+  font-style: italic;
 }
 
 footer {
